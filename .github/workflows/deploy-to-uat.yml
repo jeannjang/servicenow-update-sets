@@ -16,14 +16,13 @@ jobs:
           fetch-depth: 2
 
       - name: Get changed XML files
-        id: get_files
         run: |
           git diff --name-only HEAD~1 HEAD | grep 'update_sets/.*\.xml' > changed_files.txt || true
           echo "=== Changed files ==="
           cat changed_files.txt
           echo "===================="
 
-       - name: Deploy each Update Set XML to UAT
+      - name: Deploy each Update Set XML to UAT
         env:
           SN_INSTANCE: ${{ secrets.UAT_SN_INSTANCE }}
           SN_USERNAME: ${{ secrets.UAT_SN_USERNAME }}
@@ -37,10 +36,8 @@ jobs:
           while IFS= read -r file; do
             if [ -z "$file" ]; then continue; fi
             echo "=== Processing: $file ==="
-
             FILENAME=$(basename "$file")
 
-            # Import Update Set XML via upload API
             RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
               "https://${SN_INSTANCE}/api/now/table/sys_remote_update_set/upload" \
               -H "Accept: application/json" \
@@ -62,6 +59,7 @@ jobs:
             fi
 
           done < changed_files.txt
+
       - name: Summary
         run: |
           echo "Deployment to UAT complete!"
