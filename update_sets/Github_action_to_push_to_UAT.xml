@@ -1,8 +1,24 @@
-<update_set>
-  <record>
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-03-17 17:55:29">
+  <sys_remote_update_set action="INSERT_OR_UPDATE">
+    <application>global</application>
+    <application_display_value>Global</application_display_value>
+    <description></description>
+    <name>Github action to push to UAT</name>
+    <origin_sys_id>06a9d0f793633250e502fbf08bba109d</origin_sys_id>
+    <release_date></release_date>
+    <state>loaded</state>
+    <sys_class_name>sys_remote_update_set</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2026-03-17 10:11:12</sys_created_on>
+    <sys_id>06a9d0f793633250e502fbf08bba109d</sys_id>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2026-03-17 17:55:29</sys_updated_on>
+  </sys_remote_update_set>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application>global</application>
     <name>sys_script_c0f2c0b793233250e502fbf08bba1043</name>
-    <type>Business Rule</type>
-    <target_name>Export Update Set to GitHub</target_name>
     <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script"><sys_script action="INSERT_OR_UPDATE"><abort_action>false</abort_action><access>package_private</access><action_delete>false</action_delete><action_insert>false</action_insert><action_query>false</action_query><action_update>true</action_update><active>true</active><add_message>false</add_message><advanced>true</advanced><change_fields>false</change_fields><client_callable>false</client_callable><collection>sys_update_set</collection><condition/><description/><execute_function>false</execute_function><filter_condition table="sys_update_set">state=complete^EQ<item display_value="Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="complete"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter_condition><is_rest>false</is_rest><message/><name>Export Update Set to GitHub</name><order>100</order><priority>100</priority><rest_method/><rest_method_text/><rest_service/><rest_service_text/><rest_variables/><role_conditions/><script><![CDATA[(function executeRule(current, previous) {
 
     if (current.state == 'complete' && previous.state != 'complete') {
@@ -23,5 +39,181 @@
 	// Testing for github action 5
 
 })(current, previous);]]></script><sys_class_name>sys_script</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-17 08:39:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c0f2c0b793233250e502fbf08bba1043</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Export Update Set to GitHub</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_script_c0f2c0b793233250e502fbf08bba1043</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-17 10:52:45</sys_updated_on><template/><when>after</when></sys_script><sys_translated_text action="delete_multiple" query="documentkey=c0f2c0b793233250e502fbf08bba1043"/><sys_es_latest_script action="INSERT_OR_UPDATE"><id>c0f2c0b793233250e502fbf08bba1043</id><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-17 08:39:44</sys_created_on><sys_id>a8f484b793233250e502fbf08bba10fb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-17 08:39:44</sys_updated_on><table>sys_script</table><use_es_latest>true</use_es_latest></sys_es_latest_script></record_update>]]></payload>
-  </record>
-</update_set>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2026-03-17 10:12:00</sys_created_on>
+    <sys_id>d01ad07f93633250e502fbf08bba10a0</sys_id>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2026-03-17 10:52:45</sys_updated_on>
+    <target_name>Export Update Set to GitHub</target_name>
+    <type>Business Rule</type>
+    <update_set>06a9d0f793633250e502fbf08bba109d</update_set>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application>global</application>
+    <name>sys_script_include_eeb9bb2793effe10e502fbf08bba10ab</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include"><sys_script_include action="INSERT_OR_UPDATE"><access>public</access><active>true</active><api_name>global.UpdateSetGitExporter</api_name><caller_access/><client_callable>false</client_callable><description>Exports ServiceNow Update Sets to GitHub as XML files via the GitHub Contents API.&#13;
+Reads update records from sys_update_xml, builds an XML document, &#13;
+and commits it to the configured GitHub repository.&#13;
+&#13;
+Usage: Call exportToGit(updateSetSysId, updateSetName) from Background Script or Business Rule.&#13;
+Related properties: update_set_exporter.github_token / owner / repo / branch</description><mobile_callable>false</mobile_callable><name>UpdateSetGitExporter</name><sandbox_callable>false</sandbox_callable><script>var UpdateSetGitExporter = Class.create();&#13;
+UpdateSetGitExporter.prototype = {&#13;
+    initialize: function() {},&#13;
+&#13;
+    exportToGit: function(updateSetSysId, updateSetName) {&#13;
+        gs.log('=== UpdateSetGitExporter START: ' + updateSetName, 'GitExporter');&#13;
+&#13;
+        var xmlContent = this._getUpdateSetXML(updateSetSysId);&#13;
+        if (!xmlContent) {&#13;
+            gs.logError('XML 추출 실패: ' + updateSetSysId, 'GitExporter');&#13;
+            return;&#13;
+        }&#13;
+        gs.log('XML 추출 성공, 길이: ' + xmlContent.length, 'GitExporter');&#13;
+&#13;
+        var encodedContent = GlideStringUtil.base64Encode(xmlContent);&#13;
+        this._pushToGitHub(encodedContent, updateSetName, updateSetSysId);&#13;
+    },&#13;
+&#13;
+    _getUpdateSetXML: function(sysId) {&#13;
+        try {&#13;
+            // Update Set 메타데이터 조회&#13;
+            var updateSetGR = new GlideRecord('sys_update_set');&#13;
+            if (!updateSetGR.get(sysId)) {&#13;
+                gs.logError('Update Set not found: ' + sysId, 'GitExporter');&#13;
+                return null;&#13;
+            }&#13;
+&#13;
+            var now = new GlideDateTime();&#13;
+            var unloadDate = now.getValue();&#13;
+&#13;
+            // &lt;unload&gt; 루트 태그로 시작&#13;
+            var xmlDoc = '&lt;?xml version="1.0" encoding="UTF-8"?&gt;\n';&#13;
+            xmlDoc += '&lt;unload unload_date="' + unloadDate + '"&gt;\n';&#13;
+&#13;
+            // sys_remote_update_set 블록&#13;
+            xmlDoc += '  &lt;sys_remote_update_set action="INSERT_OR_UPDATE"&gt;\n';&#13;
+            xmlDoc += '    &lt;application&gt;' + updateSetGR.getValue('application') + '&lt;/application&gt;\n';&#13;
+            xmlDoc += '    &lt;application_display_value&gt;' + updateSetGR.getDisplayValue('application') + '&lt;/application_display_value&gt;\n';&#13;
+            xmlDoc += '    &lt;description&gt;' + (updateSetGR.getValue('description') || '') + '&lt;/description&gt;\n';&#13;
+            xmlDoc += '    &lt;name&gt;' + updateSetGR.getValue('name') + '&lt;/name&gt;\n';&#13;
+            xmlDoc += '    &lt;origin_sys_id&gt;' + sysId + '&lt;/origin_sys_id&gt;\n';&#13;
+            xmlDoc += '    &lt;release_date&gt;' + (updateSetGR.getValue('release_date') || '') + '&lt;/release_date&gt;\n';&#13;
+            xmlDoc += '    &lt;state&gt;loaded&lt;/state&gt;\n';&#13;
+            xmlDoc += '    &lt;sys_class_name&gt;sys_remote_update_set&lt;/sys_class_name&gt;\n';&#13;
+            xmlDoc += '    &lt;sys_created_by&gt;' + updateSetGR.getValue('sys_created_by') + '&lt;/sys_created_by&gt;\n';&#13;
+            xmlDoc += '    &lt;sys_created_on&gt;' + updateSetGR.getValue('sys_created_on') + '&lt;/sys_created_on&gt;\n';&#13;
+            xmlDoc += '    &lt;sys_id&gt;' + sysId + '&lt;/sys_id&gt;\n';&#13;
+            xmlDoc += '    &lt;sys_updated_by&gt;' + updateSetGR.getValue('sys_updated_by') + '&lt;/sys_updated_by&gt;\n';&#13;
+            xmlDoc += '    &lt;sys_updated_on&gt;' + updateSetGR.getValue('sys_updated_on') + '&lt;/sys_updated_on&gt;\n';&#13;
+            xmlDoc += '  &lt;/sys_remote_update_set&gt;\n';&#13;
+&#13;
+            // sys_update_xml 블록 (실제 변경 내용)&#13;
+            var gr = new GlideRecord('sys_update_xml');&#13;
+            gr.addQuery('update_set', sysId);&#13;
+            gr.query();&#13;
+&#13;
+            while (gr.next()) {&#13;
+                xmlDoc += '  &lt;sys_update_xml action="INSERT_OR_UPDATE"&gt;\n';&#13;
+                xmlDoc += '    &lt;action&gt;' + (gr.getValue('action') || 'INSERT_OR_UPDATE') + '&lt;/action&gt;\n';&#13;
+                xmlDoc += '    &lt;application&gt;' + (gr.getValue('application') || '') + '&lt;/application&gt;\n';&#13;
+                xmlDoc += '    &lt;name&gt;' + gr.getValue('name') + '&lt;/name&gt;\n';&#13;
+                xmlDoc += '    &lt;payload&gt;&lt;![CDATA[' + gr.getValue('payload') + ']]&gt;&lt;/payload&gt;\n';&#13;
+                xmlDoc += '    &lt;sys_created_by&gt;' + gr.getValue('sys_created_by') + '&lt;/sys_created_by&gt;\n';&#13;
+                xmlDoc += '    &lt;sys_created_on&gt;' + gr.getValue('sys_created_on') + '&lt;/sys_created_on&gt;\n';&#13;
+                xmlDoc += '    &lt;sys_id&gt;' + gr.getValue('sys_id') + '&lt;/sys_id&gt;\n';&#13;
+                xmlDoc += '    &lt;sys_updated_by&gt;' + gr.getValue('sys_updated_by') + '&lt;/sys_updated_by&gt;\n';&#13;
+                xmlDoc += '    &lt;sys_updated_on&gt;' + gr.getValue('sys_updated_on') + '&lt;/sys_updated_on&gt;\n';&#13;
+                xmlDoc += '    &lt;target_name&gt;' + gr.getValue('target_name') + '&lt;/target_name&gt;\n';&#13;
+                xmlDoc += '    &lt;type&gt;' + gr.getValue('type') + '&lt;/type&gt;\n';&#13;
+                xmlDoc += '    &lt;update_set&gt;' + sysId + '&lt;/update_set&gt;\n';&#13;
+                xmlDoc += '  &lt;/sys_update_xml&gt;\n';&#13;
+            }&#13;
+&#13;
+            xmlDoc += '&lt;/unload&gt;';&#13;
+&#13;
+            gs.log('XML 생성 완료, 레코드 포함', 'GitExporter');&#13;
+            return xmlDoc;&#13;
+&#13;
+        } catch (e) {&#13;
+            gs.logError('XML 생성 오류: ' + e.message, 'GitExporter');&#13;
+            return null;&#13;
+        }&#13;
+    },&#13;
+&#13;
+    _pushToGitHub: function(encodedContent, updateSetName, sysId) {&#13;
+        var token = gs.getProperty('update_set_exporter.github_token');&#13;
+        var owner = gs.getProperty('update_set_exporter.github_owner');&#13;
+        var repoName = gs.getProperty('update_set_exporter.github_repo');&#13;
+        var branch = gs.getProperty('update_set_exporter.github_branch') || 'main';&#13;
+&#13;
+&#13;
+        // 파일명 생성 (정규식 없이)&#13;
+        var nameClean = '';&#13;
+        for (var j = 0; j &lt; updateSetName.length; j++) {&#13;
+            var c = updateSetName.charAt(j);&#13;
+            nameClean += (c === ' ') ? '_' : c;&#13;
+        }&#13;
+&#13;
+        var fileName = 'update_sets/' + nameClean + '.xml';&#13;
+&#13;
+        var apiUrl = 'https://api.github.com/repos/' + owner + '/' + repoName + '/contents/' + fileName;&#13;
+&#13;
+        var existingSHA = this._getFileSHA(apiUrl, token);&#13;
+&#13;
+        var body = {&#13;
+            message: 'export: ' + updateSetName + ' (' + sysId + ')',&#13;
+            content: encodedContent,&#13;
+            branch: branch&#13;
+        };&#13;
+        if (existingSHA) body.sha = existingSHA;&#13;
+&#13;
+        var rm = new sn_ws.RESTMessageV2();&#13;
+        rm.setEndpoint(apiUrl);&#13;
+        rm.setHttpMethod('PUT');&#13;
+        rm.setRequestHeader('Authorization', 'token ' + token);&#13;
+        rm.setRequestHeader('Content-Type', 'application/json');&#13;
+        rm.setRequestHeader('User-Agent', 'ServiceNow-PDI-Exporter');&#13;
+        rm.setRequestBody(JSON.stringify(body));&#13;
+&#13;
+        var response = rm.execute();&#13;
+        var statusCode = response.getStatusCode();&#13;
+        var responseBody = response.getBody();&#13;
+&#13;
+        if (statusCode == 201 || statusCode == 200) {&#13;
+            gs.log('GitHub Push 성공! 파일: ' + fileName, 'GitExporter');&#13;
+        } else {&#13;
+            gs.logError('GitHub Push 실패 [' + statusCode + ']: ' + responseBody, 'GitExporter');&#13;
+        }&#13;
+    },&#13;
+&#13;
+    _getFileSHA: function(apiUrl, token) {&#13;
+        try {&#13;
+            var rm = new sn_ws.RESTMessageV2();&#13;
+            rm.setEndpoint(apiUrl);&#13;
+            rm.setHttpMethod('GET');&#13;
+            rm.setRequestHeader('Authorization', 'token ' + token);&#13;
+            rm.setRequestHeader('User-Agent', 'ServiceNow-PDI-Exporter');&#13;
+&#13;
+            var response = rm.execute();&#13;
+            if (response.getStatusCode() == 200) {&#13;
+                var parsed = JSON.parse(response.getBody());&#13;
+                return parsed.sha;&#13;
+            }&#13;
+        } catch (e) {}&#13;
+&#13;
+        return null;&#13;
+    },&#13;
+&#13;
+    type: 'UpdateSetGitExporter'&#13;
+};</script><sys_class_name>sys_script_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-17 07:53:34</sys_created_on><sys_id>eeb9bb2793effe10e502fbf08bba10ab</sys_id><sys_mod_count>11</sys_mod_count><sys_name>UpdateSetGitExporter</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_script_include_eeb9bb2793effe10e502fbf08bba10ab</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-17 17:54:07</sys_updated_on></sys_script_include><sys_es_latest_script action="INSERT_OR_UPDATE"><id>eeb9bb2793effe10e502fbf08bba10ab</id><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-17 07:53:34</sys_created_on><sys_id>146a332793effe10e502fbf08bba1082</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-17 08:09:45</sys_updated_on><table>sys_script_include</table><use_es_latest>true</use_es_latest></sys_es_latest_script></record_update>]]></payload>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2026-03-17 17:54:07</sys_created_on>
+    <sys_id>e1d3467793ef3250e502fbf08bba10d5</sys_id>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2026-03-17 17:54:07</sys_updated_on>
+    <target_name>UpdateSetGitExporter</target_name>
+    <type>Script Include</type>
+    <update_set>06a9d0f793633250e502fbf08bba109d</update_set>
+  </sys_update_xml>
+</unload>
