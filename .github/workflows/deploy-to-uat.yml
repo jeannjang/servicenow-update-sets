@@ -23,7 +23,7 @@ jobs:
           cat changed_files.txt
           echo "===================="
 
-      - name: Deploy each Update Set XML to UAT
+       - name: Deploy each Update Set XML to UAT
         env:
           SN_INSTANCE: ${{ secrets.UAT_SN_INSTANCE }}
           SN_USERNAME: ${{ secrets.UAT_SN_USERNAME }}
@@ -38,16 +38,15 @@ jobs:
             if [ -z "$file" ]; then continue; fi
             echo "=== Processing: $file ==="
 
-            # XML 파일을 raw 텍스트로 읽기
-            XML_CONTENT=$(cat "$file")
+            FILENAME=$(basename "$file")
 
-            # ServiceNow Retrieved Update Sets에 import
+            # Import Update Set XML via upload API
             RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
-              "https://${SN_INSTANCE}/api/now/table/sys_remote_update_set" \
-              -H "Content-Type: application/xml" \
+              "https://${SN_INSTANCE}/api/now/table/sys_remote_update_set/upload" \
               -H "Accept: application/json" \
               -u "${SN_USERNAME}:${SN_PASSWORD}" \
-              --data-binary "$XML_CONTENT")
+              -F "file=@${file};type=text/xml" \
+              -F "sysparm_table=sys_remote_update_set")
 
             HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
             BODY=$(echo "$RESPONSE" | head -n-1)
@@ -56,14 +55,13 @@ jobs:
             echo "Response: $BODY"
 
             if [ "$HTTP_CODE" -eq 200 ] || [ "$HTTP_CODE" -eq 201 ]; then
-              echo "Success: $file"
+              echo "Success: $FILENAME"
             else
-              echo "Failed: $file"
+              echo "Failed: $FILENAME"
               exit 1
             fi
 
           done < changed_files.txt
-
       - name: Summary
         run: |
           echo "Deployment to UAT complete!"
