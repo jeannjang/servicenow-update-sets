@@ -1,0 +1,21 @@
+<update_set>
+  <record>
+    <name>sys_script_c0f2c0b793233250e502fbf08bba1043</name>
+    <type>Business Rule</type>
+    <target_name>Export Update Set to GitHub</target_name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script"><sys_script action="INSERT_OR_UPDATE"><abort_action>false</abort_action><access>package_private</access><action_delete>false</action_delete><action_insert>false</action_insert><action_query>false</action_query><action_update>true</action_update><active>true</active><add_message>false</add_message><advanced>true</advanced><change_fields>false</change_fields><client_callable>false</client_callable><collection>sys_update_set</collection><condition/><description/><execute_function>false</execute_function><filter_condition table="sys_update_set">state=complete^EQ<item display_value="Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="complete"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter_condition><is_rest>false</is_rest><message/><name>Export Update Set to GitHub</name><order>100</order><priority>100</priority><rest_method/><rest_method_text/><rest_service/><rest_service_text/><rest_variables/><role_conditions/><script><![CDATA[(function executeRule(current, previous) {
+
+    if (current.state == 'complete' && previous.state != 'complete') {
+        
+        gs.log('Business Rule triggered: ' + current.name, 'GitExporter');
+        
+        var exporter = new UpdateSetGitExporter();
+        exporter.exportToGit(
+            current.sys_id.toString(),
+            current.name.toString()
+        );
+    }
+
+})(current, previous);]]></script><sys_class_name>sys_script</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-17 08:39:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c0f2c0b793233250e502fbf08bba1043</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Export Update Set to GitHub</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_script_c0f2c0b793233250e502fbf08bba1043</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-17 10:11:59</sys_updated_on><template/><when>after</when></sys_script><sys_translated_text action="delete_multiple" query="documentkey=c0f2c0b793233250e502fbf08bba1043"/><sys_es_latest_script action="INSERT_OR_UPDATE"><id>c0f2c0b793233250e502fbf08bba1043</id><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-17 08:39:44</sys_created_on><sys_id>a8f484b793233250e502fbf08bba10fb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-17 08:39:44</sys_updated_on><table>sys_script</table><use_es_latest>true</use_es_latest></sys_es_latest_script></record_update>]]></payload>
+  </record>
+</update_set>
