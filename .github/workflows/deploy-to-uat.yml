@@ -1,0 +1,63 @@
+name: Deploy Update Set to UAT
+
+on:
+  push:
+    paths:
+      - 'update_sets/**.xml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Get changed XML files
+        id: changed_files
+        run: |
+          git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep 'update_sets/.*\.xml' > changed_files.txt || true
+          cat changed_files.txt
+
+      - name: Deploy each Update Set XML to UAT
+        env:
+          SN_INSTANCE: ${{ secrets.UAT_SN_INSTANCE }}
+          SN_USERNAME: ${{ secrets.UAT_SN_USERNAME }}
+          SN_PASSWORD: ${{ secrets.UAT_SN_PASSWORD }}
+        run: |
+          while IFS= read -r file; do
+            echo "Processing: $file"
+
+            # XML 파일 내용을 읽어서 base64 인코딩
+            CONTENT=$(base64 -w 0 "$file")
+            FILENAME=$(basename "$file")
+
+            # ServiceNow Import Set API로 전송
+            RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+              "https://${SN_INSTANCE}/api/now/import/sys_remote_update_set" \
+              -H "Content-Type: application/json" \
+              -u "${SN_USERNAME}:${SN_PASSWORD}" \
+              -d "{
+                \"payload\": \"${CONTENT}\",
+                \"action\": \"insert\"
+              }")
+
+            HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+            BODY=$(echo "$RESPONSE" | head -n-1)
+
+            echo "File: $FILENAME | Status: $HTTP_CODE"
+            echo "Response: $BODY"
+
+            if [ "$HTTP_CODE" -eq 200 ] || [ "$HTTP_CODE" -eq 201 ]; then
+              echo "Successfully deployed: $FILENAME"
+            else
+              echo "Failed to deploy: $FILENAME"
+              exit 1
+            fi
+
+          done < changed_files.txt
+
+      - name: Summary
+        run: |
+          echo "Deployment to UAT complete!"
+          echo "Instance: ${{ secrets.UAT_SN_INSTANCE }}"
