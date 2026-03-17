@@ -13,10 +13,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Get changed XML files
-        id: changed_files
+      - name: Get pushed XML file
+        id: get_file
         run: |
-          git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep 'update_sets/.*\.xml' > changed_files.txt || true
+          # push된 파일 목록을 GitHub API로 가져오기
+          echo "${{ github.event.commits[0].added }}" > added.txt
+          echo "${{ github.event.commits[0].modified }}" >> added.txt
+          cat added.txt
+
+          # update_sets 폴더의 XML만 필터링
+          grep 'update_sets/.*\.xml' added.txt > changed_files.txt || true
+          echo "Changed files:"
           cat changed_files.txt
 
       - name: Deploy each Update Set XML to UAT
@@ -26,20 +33,22 @@ jobs:
           SN_PASSWORD: ${{ secrets.UAT_SN_PASSWORD }}
         run: |
           while IFS= read -r file; do
+            if [ -z "$file" ]; then continue; fi
             echo "Processing: $file"
 
-            # XML 파일 내용을 읽어서 base64 인코딩
+            # XML 파일을 base64 인코딩
             CONTENT=$(base64 -w 0 "$file")
             FILENAME=$(basename "$file")
 
-            # ServiceNow Import Set API로 전송
+            # ServiceNow Retrieved Update Sets API로 전송
             RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
-              "https://${SN_INSTANCE}/api/now/import/sys_remote_update_set" \
+              "https://${SN_INSTANCE}/api/now/table/sys_remote_update_set" \
               -H "Content-Type: application/json" \
+              -H "Accept: application/json" \
               -u "${SN_USERNAME}:${SN_PASSWORD}" \
               -d "{
                 \"payload\": \"${CONTENT}\",
-                \"action\": \"insert\"
+                \"name\": \"${FILENAME}\"
               }")
 
             HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
@@ -49,9 +58,9 @@ jobs:
             echo "Response: $BODY"
 
             if [ "$HTTP_CODE" -eq 200 ] || [ "$HTTP_CODE" -eq 201 ]; then
-              echo "Successfully deployed: $FILENAME"
+              echo "Successfully sent to UAT. Retrieved Update Sets: $FILENAME"
             else
-              echo "Failed to deploy: $FILENAME"
+              echo "Failed: $FILENAME"
               exit 1
             fi
 
@@ -59,5 +68,5 @@ jobs:
 
       - name: Summary
         run: |
-          echo "Deployment to UAT complete!"
+          echo "🚀 Deployment to UAT complete!"
           echo "Instance: ${{ secrets.UAT_SN_INSTANCE }}"
