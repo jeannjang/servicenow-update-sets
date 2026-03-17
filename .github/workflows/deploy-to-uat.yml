@@ -38,12 +38,17 @@ jobs:
             echo "=== Processing: $file ==="
             FILENAME=$(basename "$file")
 
+            # GitHub raw URL 생성
+            GITHUB_RAW_URL="https://raw.githubusercontent.com/jeannjang/servicenow-update-sets/main/${file}"
+            echo "GitHub Raw URL: $GITHUB_RAW_URL"
+
+            # 두 번째 PDI Scripted REST API 호출
             RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
-              "https://${SN_INSTANCE}/api/now/table/sys_remote_update_set/upload" \
+              "https://${SN_INSTANCE}/api/1790158/update_set_importer/import" \
+              -H "Content-Type: application/json" \
               -H "Accept: application/json" \
               -u "${SN_USERNAME}:${SN_PASSWORD}" \
-              -F "file=@${file};type=text/xml" \
-              -F "sysparm_table=sys_remote_update_set")
+              -d "{\"github_url\": \"${GITHUB_RAW_URL}\"}")
 
             HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
             BODY=$(echo "$RESPONSE" | head -n-1)
