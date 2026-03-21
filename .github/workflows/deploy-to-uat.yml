@@ -48,7 +48,7 @@ jobs:
               -H "Content-Type: application/json" \
               -H "Accept: application/json" \
               -u "${SN_USERNAME}:${SN_PASSWORD}" \
-              -d "{\"github_url\": \"${GITHUB_RAW_URL}\"}")
+              -d "{\"github_url\": \"${GITHUB_RAW_URL}\", \"file_name\": \"${FILENAME}\", \"source_file_path\": \"${file}\"}")
 
             HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
             BODY=$(echo "$RESPONSE" | head -n-1)
