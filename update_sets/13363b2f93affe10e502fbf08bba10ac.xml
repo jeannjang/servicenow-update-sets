@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-03-20 23:39:30">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version></application_version>
+<collisions></collisions>
+<commit_date></commit_date>
+<deleted></deleted>
+<description>to Github</description>
+<inserted></inserted>
+<name>Update set with git</name>
+<origin_sys_id></origin_sys_id>
+<parent display_value=""></parent>
+<release_date></release_date>
+<remote_base_update_set display_value=""></remote_base_update_set>
+<remote_parent_id></remote_parent_id>
+<remote_sys_id>13363b2f93affe10e502fbf08bba10ac</remote_sys_id>
+<state>loaded</state>
+<summary></summary>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>aacfcc4d93737a50e502fbf08bba100f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<update_set display_value=""></update_set>
+<update_source display_value=""></update_source>
+<updated></updated>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_properties_3dc73baf93affe10e502fbf08bba1047</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_properties&quot;&gt;&lt;sys_properties action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;choices/&gt;&lt;description&gt;GitHub Personal Access Token (classic) used for authenticating API requests. &amp;#13;
+Requires &apos;repo&apos; scope. Stored encrypted as password2. &amp;#13;
+Do not share or expose the value.&lt;/description&gt;&lt;ignore_cache&gt;true&lt;/ignore_cache&gt;&lt;is_private&gt;false&lt;/is_private&gt;&lt;name&gt;update_set_exporter.github_token&lt;/name&gt;&lt;read_roles/&gt;&lt;suffix/&gt;&lt;sys_class_name&gt;sys_properties&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 07:43:00&lt;/sys_created_on&gt;&lt;sys_id&gt;3dc73baf93affe10e502fbf08bba1047&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;update_set_exporter.github_token&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_3dc73baf93affe10e502fbf08bba1047&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 07:48:18&lt;/sys_updated_on&gt;&lt;type&gt;password2&lt;/type&gt;&lt;value&gt;)pR#e1BThptrkB+TJ40avPKtQAyWOXjv46oLLIWZiRAkCVsBHOrETU4mHxFHqchtDo+uaSyQuyD9df7YGHp26zVmqeqkt3qOhqp+hlTFzGuPoXg=&lt;/value&gt;&lt;write_roles/&gt;&lt;/sys_properties&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=3dc73baf93affe10e502fbf08bba1047&quot;/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>892021923</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>22cfc8c593777a50e502fbf08bba10b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cfac45c890000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>update_set_exporter.github_token</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>1729ffa388effe106ab21d074b90d79d</update_guid>
+<update_guid_history>1729ffa388effe106ab21d074b90d79d:892021923,7319ffa307effe1047e8726893b18ea8:-1141066342,79f77763d6effe105c03649c6b300458:-269335101</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_properties_7bda9f3493ff3a50e502fbf08bba10ac</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_properties&quot;&gt;&lt;sys_properties action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;choices/&gt;&lt;description/&gt;&lt;ignore_cache&gt;true&lt;/ignore_cache&gt;&lt;is_private&gt;false&lt;/is_private&gt;&lt;name&gt;update_set_exporter.sn_password&lt;/name&gt;&lt;read_roles/&gt;&lt;suffix/&gt;&lt;sys_class_name&gt;sys_properties&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-21 02:48:56&lt;/sys_created_on&gt;&lt;sys_id&gt;7bda9f3493ff3a50e502fbf08bba10ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;update_set_exporter.sn_password&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_7bda9f3493ff3a50e502fbf08bba10ac&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-21 02:48:56&lt;/sys_updated_on&gt;&lt;type&gt;password2&lt;/type&gt;&lt;value&gt;)pR#nbSKvqP9LvXwVHBCWKcl7eDTN4I1mT0Iq8kT23EjhIMhDPj8XdgL/mMIJZDns/b5&lt;/value&gt;&lt;write_roles/&gt;&lt;/sys_properties&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=7bda9f3493ff3a50e502fbf08bba10ac&quot;/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-135450334</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>26cfc8c593777a50e502fbf08bba10b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d0e4bb7c20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>update_set_exporter.sn_password</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>810b9374a9ff3a507a280e5abafc77af</update_guid>
+<update_guid_history>810b9374a9ff3a507a280e5abafc77af:-135450334</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Password Reset flows">61a9cb3ddb162300314873568c9619bf</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_kmf_module_crypto_spec_8c2cb789773630100a9bcac5ec5a99b1</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_kmf_module_crypto_spec&quot;&gt;&lt;sys_kmf_module_crypto_spec action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;algorithm display_value=&quot;AES 256 GCM&quot;&gt;6d2e9e9553013300cd1eddeeff7b1224&lt;/algorithm&gt;&lt;alias&gt;password_reset --- Symmetric Key Wrapping/Unwrapping&lt;/alias&gt;&lt;auto_generate_key&gt;true&lt;/auto_generate_key&gt;&lt;crypto_module display_value=&quot;sn_pwdreset_ah.password_reset&quot;&gt;d41c3789773630100a9bcac5ec5a99e2&lt;/crypto_module&gt;&lt;crypto_purpose display_value=&quot;Symmetric Key Wrapping/Unwrapping&quot;&gt;243e7b64c7003300af4d43c6f09763de&lt;/crypto_purpose&gt;&lt;download_wrapping_key/&gt;&lt;enroll_module_for_resource_exchange&gt;false&lt;/enroll_module_for_resource_exchange&gt;&lt;generate_key&gt;1230c3bb0bc83300af4deaf1a3673a8a&lt;/generate_key&gt;&lt;import_key_from_keystore&gt;0b0e5336c7003300af4d43c6f0976315&lt;/import_key_from_keystore&gt;&lt;integrity_preserving&gt;false&lt;/integrity_preserving&gt;&lt;key_alias/&gt;&lt;key_type display_value=&quot;Symmetric Key Encryption Key&quot;&gt;ca005cf7c7103300af4d43c6f0976328&lt;/key_type&gt;&lt;key_version&gt;-1&lt;/key_version&gt;&lt;origin&gt;servicenow&lt;/origin&gt;&lt;sn_kmf_state&gt;key_creation&lt;/sn_kmf_state&gt;&lt;sys_class_name&gt;sys_kmf_module_crypto_spec&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-23 13:20:08&lt;/sys_created_on&gt;&lt;sys_id&gt;8c2cb789773630100a9bcac5ec5a99b1&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;password_reset --- Symmetric Key Wrapping/Unwrapping&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Password Reset flows&quot; source=&quot;sn_pwdreset_ah&quot;&gt;61a9cb3ddb162300314873568c9619bf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Password Reset flows&quot;&gt;61a9cb3ddb162300314873568c9619bf&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_kmf_module_crypto_spec_8c2cb789773630100a9bcac5ec5a99b1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 11:07:09&lt;/sys_updated_on&gt;&lt;upload_csk&gt;a4bff7d453010010cd1eddeeff7b12b0&lt;/upload_csk&gt;&lt;/sys_kmf_module_crypto_spec&gt;&lt;/record_update&gt;</payload>
+<payload_hash>48051711</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>26cfcc4d93737a50e502fbf08bba1010</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cfb7a68040000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>password_reset --- Symmetric Key Wrapping/Unwrapping</target_name>
+<type>Crypto Specification</type>
+<update_domain>global</update_domain>
+<update_guid>48b6a4bbb32732506d98ce9375d387a9</update_guid>
+<update_guid_history>48b6a4bbb32732506d98ce9375d387a9:48051711,80b6a4bb75273250ec7f1f7b6e484ea6:265214064</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_properties_dc78772393effe10e502fbf08bba1078</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_properties&quot;&gt;&lt;sys_properties action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;choices/&gt;&lt;description&gt;Target branch name in the GitHub repository for committing Update Set exports.&amp;#13;
+The branch must already exist. Default: main&lt;/description&gt;&lt;ignore_cache&gt;true&lt;/ignore_cache&gt;&lt;is_private&gt;false&lt;/is_private&gt;&lt;name&gt;update_set_exporter.github_branch&lt;/name&gt;&lt;read_roles/&gt;&lt;suffix/&gt;&lt;sys_class_name&gt;sys_properties&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 07:46:03&lt;/sys_created_on&gt;&lt;sys_id&gt;dc78772393effe10e502fbf08bba1078&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;update_set_exporter.github_branch&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_dc78772393effe10e502fbf08bba1078&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 07:49:17&lt;/sys_updated_on&gt;&lt;type&gt;string&lt;/type&gt;&lt;value&gt;main&lt;/value&gt;&lt;write_roles/&gt;&lt;/sys_properties&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=dc78772393effe10e502fbf08bba1078&quot;/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1045923478</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>2acfc8c593777a50e502fbf08bba10ba</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cfac5449c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>update_set_exporter.github_branch</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>3969332717effe108f6de351affffe7d</update_guid>
+<update_guid_history>3969332717effe108f6de351affffe7d:1045923478,56a8bba398effe10ecdd6f45768f4419:208842752</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_kmf_module_key_policy_00b6a4bb93273250e502fbf08bba1093</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_kmf_module_key_policy&quot;&gt;&lt;sys_kmf_module_key_policy action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;crypto_module display_value=&quot;sn_pwdreset_ah.password_reset&quot;&gt;d41c3789773630100a9bcac5ec5a99e2&lt;/crypto_module&gt;&lt;key_type display_value=&quot;Symmetric Key Encryption Key&quot;&gt;ca005cf7c7103300af4d43c6f0976328&lt;/key_type&gt;&lt;last_enforced&gt;2026-03-17 11:07:08&lt;/last_enforced&gt;&lt;result&gt;reject&lt;/result&gt;&lt;sys_class_name&gt;sys_kmf_module_key_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 11:07:08&lt;/sys_created_on&gt;&lt;sys_id&gt;00b6a4bb93273250e502fbf08bba1093&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_kmf_module_key_policy_00b6a4bb93273250e502fbf08bba1093&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 11:07:08&lt;/sys_updated_on&gt;&lt;/sys_kmf_module_key_policy&gt;&lt;/record_update&gt;</payload>
+<payload_hash>39470949</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>62cfc8c593777a50e502fbf08bba10b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cfb7a67780000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name></target_name>
+<type>Crypto Module Key Policy</type>
+<update_domain>global</update_domain>
+<update_guid>ccb6a4bb01273250d6561cafc18e2a96</update_guid>
+<update_guid_history>ccb6a4bb01273250d6561cafc18e2a96:39470949</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_properties_5cc660bb93273250e502fbf08bba105f</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_properties&quot;&gt;&lt;sys_properties action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;choices/&gt;&lt;description/&gt;&lt;ignore_cache&gt;true&lt;/ignore_cache&gt;&lt;is_private&gt;false&lt;/is_private&gt;&lt;name&gt;update_set_exporter.sn_password&lt;/name&gt;&lt;read_roles/&gt;&lt;suffix/&gt;&lt;sys_class_name&gt;sys_properties&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 11:07:47&lt;/sys_created_on&gt;&lt;sys_id&gt;5cc660bb93273250e502fbf08bba105f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;update_set_exporter.sn_password&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_5cc660bb93273250e502fbf08bba105f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 11:07:47&lt;/sys_updated_on&gt;&lt;type&gt;string&lt;/type&gt;&lt;value&gt;Please12!&lt;/value&gt;&lt;write_roles/&gt;&lt;/sys_properties&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=5cc660bb93273250e502fbf08bba105f&quot;/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-76116111</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>66cfc8c593777a50e502fbf08bba10b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cfb7afe990000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>update_set_exporter.sn_password</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>a9d6a07b112732508260f5ef8ed01dba</update_guid>
+<update_guid_history>a9d6a07b112732508260f5ef8ed01dba:-76116111</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_properties_8946287b93273250e502fbf08bba1008</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_properties&quot;&gt;&lt;sys_properties action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;choices/&gt;&lt;description/&gt;&lt;ignore_cache&gt;true&lt;/ignore_cache&gt;&lt;is_private&gt;false&lt;/is_private&gt;&lt;name&gt;update_set_exporter.sn_user&lt;/name&gt;&lt;read_roles/&gt;&lt;suffix/&gt;&lt;sys_class_name&gt;sys_properties&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 11:05:41&lt;/sys_created_on&gt;&lt;sys_id&gt;8946287b93273250e502fbf08bba1008&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;update_set_exporter.sn_user&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_8946287b93273250e502fbf08bba1008&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 11:05:41&lt;/sys_updated_on&gt;&lt;type&gt;string&lt;/type&gt;&lt;value&gt;admin&lt;/value&gt;&lt;write_roles/&gt;&lt;/sys_properties&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=8946287b93273250e502fbf08bba1008&quot;/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>995294168</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>6acfc8c593777a50e502fbf08bba10b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cfb7911e10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>update_set_exporter.sn_user</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>b656a87bdc27325011510f29e6f083ac</update_guid>
+<update_guid_history>b656a87bdc27325011510f29e6f083ac:995294168</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_script_include_eeb9bb2793effe10e502fbf08bba10ab</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_script_include&quot;&gt;&lt;sys_script_include action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.UpdateSetGitExporter&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Exports ServiceNow Update Sets to GitHub as XML files via the GitHub Contents API.&amp;#13;
+Reads update records from sys_update_xml, builds an XML document, &amp;#13;
+and commits it to the configured GitHub repository.&amp;#13;
+&amp;#13;
+Usage: Call exportToGit(updateSetSysId, updateSetName) from Background Script or Business Rule.&amp;#13;
+Related properties: update_set_exporter.github_token / owner / repo / branch&lt;/description&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;UpdateSetGitExporter&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var UpdateSetGitExporter = Class.create();
+UpdateSetGitExporter.prototype = {
+    initialize: function() {},
+
+    exportToGit: function(localUpdateSetSysId, updateSetName) {
+        gs.log(&apos;=== UpdateSetGitExporter START: &apos; + updateSetName, &apos;GitExporter&apos;);
+
+        var localUpdateSet = new GlideRecord(&apos;sys_update_set&apos;);
+        if (!localUpdateSet.get(localUpdateSetSysId)) {
+            gs.logError(&apos;Local Update Set not found: &apos; + localUpdateSetSysId, &apos;GitExporter&apos;);
+            return;
+        }
+
+        if (localUpdateSet.getValue(&apos;state&apos;) != &apos;complete&apos;) {
+            gs.logError(&apos;Update Set must be Complete before export. Current state: &apos; + localUpdateSet.getValue(&apos;state&apos;), &apos;GitExporter&apos;);
+            return;
+        }
+
+        var remoteUpdateSetSysId = this._createRemoteUpdateSet(localUpdateSet);
+        if (!remoteUpdateSetSysId) {
+            gs.logError(&apos;Remote Update Set creation failed for: &apos; + localUpdateSetSysId, &apos;GitExporter&apos;);
+            return;
+        }
+
+        gs.log(&apos;Remote Update Set created: &apos; + remoteUpdateSetSysId, &apos;GitExporter&apos;);
+
+        var xmlContent = this._buildUnloadXml(remoteUpdateSetSysId);
+        if (!xmlContent) {
+            gs.logError(&apos;Failed to build unload XML for remote update set: &apos; + remoteUpdateSetSysId, &apos;GitExporter&apos;);
+            return;
+        }
+
+        gs.log(&apos;Unload XML built successfully, length: &apos; + xmlContent.length, &apos;GitExporter&apos;);
+
+        this._pushToGitHub(xmlContent, updateSetName, localUpdateSetSysId);
+    },
+
+    _createRemoteUpdateSet: function(localUpdateSetGr) {
+        try {
+            var exporter = new UpdateSetExport();
+            return exporter.exportUpdateSet(localUpdateSetGr);
+        } catch (e) {
+            gs.logError(&apos;Failed to create remote update set: &apos; + e.message, &apos;GitExporter&apos;);
+            return null;
+        }
+    },
+
+    _buildUnloadXml: function(remoteUpdateSetSysId) {
+        try {
+            var remoteUs = new GlideRecord(&apos;sys_remote_update_set&apos;);
+            if (!remoteUs.get(remoteUpdateSetSysId)) {
+                gs.logError(&apos;Remote Update Set not found: &apos; + remoteUpdateSetSysId, &apos;GitExporter&apos;);
+                return null;
+            }
+
+            var xml = &apos;&apos;;
+            xml += &apos;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&apos;;
+            xml += &apos;&lt;unload unload_date=&quot;&apos; + this._escapeXml(gs.nowDateTime()) + &apos;&quot;&gt;\n&apos;;
+
+            // 수동 export와 최대한 비슷하게 필드 순서 지정
+            var remoteFieldOrder = [
+                &apos;application&apos;,
+                &apos;application_name&apos;,
+                &apos;application_scope&apos;,
+                &apos;application_version&apos;,
+                &apos;collisions&apos;,
+                &apos;commit_date&apos;,
+                &apos;deleted&apos;,
+                &apos;description&apos;,
+                &apos;inserted&apos;,
+                &apos;name&apos;,
+                &apos;origin_sys_id&apos;,
+                &apos;parent&apos;,
+                &apos;release_date&apos;,
+                &apos;remote_base_update_set&apos;,
+                &apos;remote_parent_id&apos;,
+                &apos;remote_sys_id&apos;,
+                &apos;state&apos;,
+                &apos;summary&apos;,
+                &apos;sys_class_name&apos;,
+                &apos;sys_created_by&apos;,
+                &apos;sys_created_on&apos;,
+                &apos;sys_id&apos;,
+                &apos;sys_mod_count&apos;,
+                &apos;sys_updated_by&apos;,
+                &apos;sys_updated_on&apos;,
+                &apos;update_set&apos;,
+                &apos;update_source&apos;,
+                &apos;updated&apos;
+            ];
+
+            xml += this._serializeRecordWithOrder(remoteUs, &apos;sys_remote_update_set&apos;, remoteFieldOrder);
+
+            var updateXml = new GlideRecord(&apos;sys_update_xml&apos;);
+            updateXml.addQuery(&apos;remote_update_set&apos;, remoteUpdateSetSysId);
+            updateXml.orderBy(&apos;sys_created_on&apos;);
+            updateXml.query();
+
+            var count = 0;
+
+            var updateXmlFieldOrder = [
+                &apos;action&apos;,
+                &apos;application&apos;,
+                &apos;category&apos;,
+                &apos;comments&apos;,
+                &apos;name&apos;,
+                &apos;payload&apos;,
+                &apos;payload_hash&apos;,
+                &apos;remote_update_set&apos;,
+                &apos;replace_on_upgrade&apos;,
+                &apos;sys_created_by&apos;,
+                &apos;sys_created_on&apos;,
+                &apos;sys_id&apos;,
+                &apos;sys_mod_count&apos;,
+                &apos;sys_recorded_at&apos;,
+                &apos;sys_updated_by&apos;,
+                &apos;sys_updated_on&apos;,
+                &apos;table&apos;,
+                &apos;target_name&apos;,
+                &apos;type&apos;,
+                &apos;update_domain&apos;,
+                &apos;update_guid&apos;,
+                &apos;update_guid_history&apos;,
+                &apos;update_set&apos;,
+                &apos;view&apos;
+            ];
+
+            while (updateXml.next()) {
+                xml += this._serializeRecordWithOrder(updateXml, &apos;sys_update_xml&apos;, updateXmlFieldOrder);
+                count++;
+            }
+
+            xml += &apos;&lt;/unload&gt;&apos;;
+
+            gs.log(&apos;Serialized sys_update_xml count: &apos; + count, &apos;GitExporter&apos;);
+            return xml;
+
+        } catch (e) {
+            gs.logError(&apos;Build unload XML error: &apos; + e.message, &apos;GitExporter&apos;);
+            return null;
+        }
+    },
+
+    _serializeRecordWithOrder: function(gr, tagName, orderedFields) {
+        var xml = &apos;&apos;;
+        xml += &apos;&lt;&apos; + tagName + &apos; action=&quot;INSERT_OR_UPDATE&quot;&gt;\n&apos;;
+
+        var handled = {};
+
+        for (var i = 0; i &lt; orderedFields.length; i++) {
+            var fieldName = orderedFields[i];
+            if (!gr.isValidField(fieldName))
+                continue;
+
+            handled[fieldName] = true;
+            xml += this._serializeField(gr, fieldName);
+        }
+
+        // 혹시 orderedFields에 없는 필드가 있으면 뒤에 추가
+        var fields = gr.getFields();
+        for (var j = 0; j &lt; fields.size(); j++) {
+            var field = fields.get(j);
+            var extraFieldName = field.getName();
+
+            if (handled[extraFieldName])
+                continue;
+
+            if (extraFieldName == &apos;sys_tags&apos;)
+                continue;
+
+            xml += this._serializeField(gr, extraFieldName);
+        }
+
+        xml += &apos;&lt;/&apos; + tagName + &apos;&gt;\n&apos;;
+        return xml;
+    },
+
+    _serializeField: function(gr, fieldName) {
+        var value = gr.getValue(fieldName);
+        var displayValue = gr.getDisplayValue(fieldName);
+
+        if (value === null || value === undefined)
+            value = &apos;&apos;;
+
+        if (displayValue === null || displayValue === undefined)
+            displayValue = &apos;&apos;;
+
+        var element = gr.getElement(fieldName);
+        var ed = element.getED();
+        var internalType = ed.getInternalType();
+
+        var xml = &apos;&apos;;
+        var escapedValue = this._escapeXml(value);
+        var escapedDisplayValue = this._escapeXml(displayValue);
+
+        // payload는 수동 export처럼 CDATA가 아니라 escaped text로 출력
+        if (fieldName == &apos;payload&apos;) {
+            xml += &apos;&lt;&apos; + fieldName + &apos;&gt;&apos; + escapedValue + &apos;&lt;/&apos; + fieldName + &apos;&gt;\n&apos;;
+            return xml;
+        }
+
+        // 참조 필드는 display_value 속성 추가
+        if (internalType == &apos;reference&apos;) {
+            xml += &apos;&lt;&apos; + fieldName + &apos; display_value=&quot;&apos; + escapedDisplayValue + &apos;&quot;&gt;&apos; + escapedValue + &apos;&lt;/&apos; + fieldName + &apos;&gt;\n&apos;;
+            return xml;
+        }
+
+        xml += &apos;&lt;&apos; + fieldName + &apos;&gt;&apos; + escapedValue + &apos;&lt;/&apos; + fieldName + &apos;&gt;\n&apos;;
+        return xml;
+    },
+
+    _escapeXml: function(value) {
+        if (value === null || value === undefined)
+            return &apos;&apos;;
+
+        value = String(value);
+        value = value.replace(/&amp;/g, &apos;&amp;amp;&apos;);
+        value = value.replace(/&lt;/g, &apos;&amp;lt;&apos;);
+        value = value.replace(/&gt;/g, &apos;&amp;gt;&apos;);
+        value = value.replace(/&quot;/g, &apos;&amp;quot;&apos;);
+        value = value.replace(/&apos;/g, &apos;&amp;apos;&apos;);
+        return value;
+    },
+
+    _pushToGitHub: function(xmlContent, updateSetName, localUpdateSetSysId) {
+        try {
+            var token = gs.getProperty(&apos;update_set_exporter.github_token&apos;);
+            var owner = gs.getProperty(&apos;update_set_exporter.github_owner&apos;);
+            var repoName = gs.getProperty(&apos;update_set_exporter.github_repo&apos;);
+            var branch = gs.getProperty(&apos;update_set_exporter.github_branch&apos;) || &apos;main&apos;;
+
+            if (!token || !owner || !repoName) {
+                gs.logError(&apos;Missing GitHub properties.&apos;, &apos;GitExporter&apos;);
+                return;
+            }
+
+            var fileName = &apos;update_sets/&apos; + localUpdateSetSysId + &apos;.xml&apos;;
+            var apiUrl = &apos;https://api.github.com/repos/&apos; + owner + &apos;/&apos; + repoName + &apos;/contents/&apos; + fileName;
+
+            var encodedContent = GlideStringUtil.base64Encode(xmlContent);
+            var existingSHA = this._getFileSHA(apiUrl, token);
+
+            var body = {
+                message: &apos;export official-like unload xml: &apos; + updateSetName + &apos; (&apos; + localUpdateSetSysId + &apos;)&apos;,
+                content: encodedContent,
+                branch: branch
+            };
+
+            if (existingSHA)
+                body.sha = existingSHA;
+
+            var rm = new sn_ws.RESTMessageV2();
+            rm.setEndpoint(apiUrl);
+            rm.setHttpMethod(&apos;PUT&apos;);
+            rm.setRequestHeader(&apos;Authorization&apos;, &apos;token &apos; + token);
+            rm.setRequestHeader(&apos;Content-Type&apos;, &apos;application/json&apos;);
+            rm.setRequestHeader(&apos;User-Agent&apos;, &apos;ServiceNow-PDI-Exporter&apos;);
+            rm.setRequestBody(JSON.stringify(body));
+
+            var response = rm.execute();
+            var statusCode = response.getStatusCode();
+            var responseBody = response.getBody();
+
+            if (statusCode == 200 || statusCode == 201) {
+                gs.log(&apos;GitHub Push success: &apos; + fileName, &apos;GitExporter&apos;);
+            } else {
+                gs.logError(&apos;GitHub Push failed [&apos; + statusCode + &apos;]: &apos; + responseBody, &apos;GitExporter&apos;);
+            }
+
+        } catch (e) {
+            gs.logError(&apos;GitHub push error: &apos; + e.message, &apos;GitExporter&apos;);
+        }
+    },
+
+    _getFileSHA: function(apiUrl, token) {
+        try {
+            var rm = new sn_ws.RESTMessageV2();
+            rm.setEndpoint(apiUrl);
+            rm.setHttpMethod(&apos;GET&apos;);
+            rm.setRequestHeader(&apos;Authorization&apos;, &apos;token &apos; + token);
+            rm.setRequestHeader(&apos;User-Agent&apos;, &apos;ServiceNow-PDI-Exporter&apos;);
+
+            var response = rm.execute();
+            if (response.getStatusCode() == 200) {
+                var parsed = JSON.parse(response.getBody());
+                return parsed.sha;
+            }
+        } catch (e) {
+            gs.log(&apos;No existing SHA found; creating new file.&apos;, &apos;GitExporter&apos;);
+        }
+        return null;
+    },
+
+    type: &apos;UpdateSetGitExporter&apos;
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 07:53:34&lt;/sys_created_on&gt;&lt;sys_id&gt;eeb9bb2793effe10e502fbf08bba10ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;UpdateSetGitExporter&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_eeb9bb2793effe10e502fbf08bba10ab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-21 04:14:39&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;id&gt;eeb9bb2793effe10e502fbf08bba10ab&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 07:53:34&lt;/sys_created_on&gt;&lt;sys_id&gt;146a332793effe10e502fbf08bba1082&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 08:09:45&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>847703546</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>6ecfc8c593777a50e502fbf08bba10ba</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d0e9a33b20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>UpdateSetGitExporter</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>fcae677470737a507ad3cb744dbe0272</update_guid>
+<update_guid_history>fcae677470737a507ad3cb744dbe0272:847703546,5c1c27fc07337a50597409114a4351de:-832210748,cd662b744f337a50804590561b69aabb:1053007096,6ecfdf7c96ff3a50a69af8e39013b1ba:189751495,727a9334b5ff3a50c9710fd091ec2a2b:1908610259,add34677baef3250a082b569a3653dd4:-1623197513,54e9a43354673250115b9408da96e6a3:177878834,74296cbf812732502e70223ee001aa60:1600578336,5d95603b4b273250a22fd6614180e4fc:-2121820290,3e4944b33463325018f410dd0e11bb06:1600578336,05c8047369633250c732c8e8e2ac00ef:-1087918606,4e58c433856332505c05974102a60ca4:1497589304,82c784ff4c233250bcf496104349b2ed:1600578336,00af3bebadeffe101703b6ac11843018:608898184,2d0df3ab0aeffe107965c9743982d3e9:1550712077,9f4c73a7e5effe10e8ccbc6d09e33678:70514037,e86a7be31ceffe108d4739c4f1e784ba:-1255703781</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_properties_0f28776393effe10e502fbf08bba105b</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_properties&quot;&gt;&lt;sys_properties action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;choices/&gt;&lt;description&gt;Name of the GitHub repository where Update Set XML files will be committed. &amp;#13;
+The repository must already exist and be initialized with at least one commit.&amp;#13;
+Example: servicenow-update-sets&lt;/description&gt;&lt;ignore_cache&gt;true&lt;/ignore_cache&gt;&lt;is_private&gt;false&lt;/is_private&gt;&lt;name&gt;update_set_exporter.github_repo&lt;/name&gt;&lt;read_roles/&gt;&lt;suffix/&gt;&lt;sys_class_name&gt;sys_properties&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 07:45:03&lt;/sys_created_on&gt;&lt;sys_id&gt;0f28776393effe10e502fbf08bba105b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;update_set_exporter.github_repo&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_0f28776393effe10e502fbf08bba105b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 07:49:06&lt;/sys_updated_on&gt;&lt;type&gt;string&lt;/type&gt;&lt;value&gt;servicenow-update-sets&lt;/value&gt;&lt;write_roles/&gt;&lt;/sys_properties&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=0f28776393effe10e502fbf08bba105b&quot;/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1435127468</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>a6cfc8c593777a50e502fbf08bba10b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cfac517700000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>update_set_exporter.github_repo</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>4759ffe36aeffe10f7e8ec0e89979065</update_guid>
+<update_guid_history>4759ffe36aeffe10f7e8ec0e89979065:-1435127468,f368f3a34beffe108abf8fd232899b80:1273485808</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_properties_5cc660bb93273250e502fbf08bba105f</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_properties&quot;&gt;&lt;sys_properties action=&quot;DELETE&quot;&gt;&lt;choices/&gt;&lt;description/&gt;&lt;ignore_cache&gt;true&lt;/ignore_cache&gt;&lt;is_private&gt;false&lt;/is_private&gt;&lt;name&gt;update_set_exporter.sn_password&lt;/name&gt;&lt;read_roles/&gt;&lt;suffix/&gt;&lt;sys_class_name&gt;sys_properties&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 11:07:47&lt;/sys_created_on&gt;&lt;sys_id&gt;5cc660bb93273250e502fbf08bba105f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;update_set_exporter.sn_password&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_5cc660bb93273250e502fbf08bba105f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 11:07:47&lt;/sys_updated_on&gt;&lt;type&gt;string&lt;/type&gt;&lt;value&gt;Please12!&lt;/value&gt;&lt;write_roles/&gt;&lt;/sys_properties&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=5cc660bb93273250e502fbf08bba105f&quot;/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1844076517</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>aacfc8c593777a50e502fbf08bba10b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cfb8280d20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>update_set_exporter.sn_password</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>6db8a0fb422732506edaa727ee5d041c</update_guid>
+<update_guid_history>6db8a0fb422732506edaa727ee5d041c:1844076517,a9d6a07b112732508260f5ef8ed01dba:-76116111</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_properties_8946287b93273250e502fbf08bba1008</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_properties&quot;&gt;&lt;sys_properties action=&quot;DELETE&quot;&gt;&lt;choices/&gt;&lt;description/&gt;&lt;ignore_cache&gt;true&lt;/ignore_cache&gt;&lt;is_private&gt;false&lt;/is_private&gt;&lt;name&gt;update_set_exporter.sn_user&lt;/name&gt;&lt;read_roles/&gt;&lt;suffix/&gt;&lt;sys_class_name&gt;sys_properties&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 11:05:41&lt;/sys_created_on&gt;&lt;sys_id&gt;8946287b93273250e502fbf08bba1008&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;update_set_exporter.sn_user&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_8946287b93273250e502fbf08bba1008&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 11:05:41&lt;/sys_updated_on&gt;&lt;type&gt;string&lt;/type&gt;&lt;value&gt;admin&lt;/value&gt;&lt;write_roles/&gt;&lt;/sys_properties&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=8946287b93273250e502fbf08bba1008&quot;/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-599467444</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>aecfc8c593777a50e502fbf08bba10b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cfb8318840000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>update_set_exporter.sn_user</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>83d868bf1a273250e46a0cea98d565df</update_guid>
+<update_guid_history>83d868bf1a273250e46a0cea98d565df:-599467444,b656a87bdc27325011510f29e6f083ac:995294168</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_properties_d2f73f2393effe10e502fbf08bba10ca</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_properties&quot;&gt;&lt;sys_properties action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;choices/&gt;&lt;description&gt;GitHub username or organization name that owns the target repository. &amp;#13;
+Used to construct the GitHub API endpoint URL.&amp;#13;
+Example: jeannjang&lt;/description&gt;&lt;ignore_cache&gt;true&lt;/ignore_cache&gt;&lt;is_private&gt;false&lt;/is_private&gt;&lt;name&gt;update_set_exporter.github_owner&lt;/name&gt;&lt;read_roles/&gt;&lt;suffix/&gt;&lt;sys_class_name&gt;sys_properties&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 07:43:50&lt;/sys_created_on&gt;&lt;sys_id&gt;d2f73f2393effe10e502fbf08bba10ca&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;update_set_exporter.github_owner&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_d2f73f2393effe10e502fbf08bba10ca&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 07:48:50&lt;/sys_updated_on&gt;&lt;type&gt;string&lt;/type&gt;&lt;value&gt;jeannjang&lt;/value&gt;&lt;write_roles/&gt;&lt;/sys_properties&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=d2f73f2393effe10e502fbf08bba10ca&quot;/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2027971430</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>e2cfc8c593777a50e502fbf08bba10ba</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cfac4d9ab0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>update_set_exporter.github_owner</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>534973e3a8effe100117740889063620</update_guid>
+<update_guid_history>534973e3a8effe100117740889063620:-2027971430,4628bb6377effe1027bc985f4e50258c:485420587</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_properties_3baa97fc93bf3a50e502fbf08bba1035</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_properties&quot;&gt;&lt;sys_properties action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;choices/&gt;&lt;description/&gt;&lt;ignore_cache&gt;true&lt;/ignore_cache&gt;&lt;is_private&gt;false&lt;/is_private&gt;&lt;name&gt;update_set_exporter.sn_user&lt;/name&gt;&lt;read_roles/&gt;&lt;suffix/&gt;&lt;sys_class_name&gt;sys_properties&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-21 02:47:57&lt;/sys_created_on&gt;&lt;sys_id&gt;3baa97fc93bf3a50e502fbf08bba1035&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;update_set_exporter.sn_user&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_3baa97fc93bf3a50e502fbf08bba1035&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-21 02:47:57&lt;/sys_updated_on&gt;&lt;type&gt;string&lt;/type&gt;&lt;value&gt;admin&lt;/value&gt;&lt;write_roles/&gt;&lt;/sys_properties&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=3baa97fc93bf3a50e502fbf08bba1035&quot;/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>995294168</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>eacfc8c593777a50e502fbf08bba10b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d0e4ad1d10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>update_set_exporter.sn_user</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>f2ca5370ceff3a50dea49403e773b8ab</update_guid>
+<update_guid_history>f2ca5370ceff3a50dea49403e773b8ab:995294168</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_properties_6b67772393effe10e502fbf08bba1017</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sys_properties&quot;&gt;&lt;sys_properties action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;choices/&gt;&lt;description&gt;Export target platform for Update Set automation. &amp;#13;
+Supported values: github, ado. &amp;#13;
+Determines which external repository the Update Set XML will be pushed to.&lt;/description&gt;&lt;ignore_cache&gt;true&lt;/ignore_cache&gt;&lt;is_private&gt;false&lt;/is_private&gt;&lt;name&gt;update_set_exporter.target&lt;/name&gt;&lt;read_roles/&gt;&lt;suffix/&gt;&lt;sys_class_name&gt;sys_properties&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 07:41:52&lt;/sys_created_on&gt;&lt;sys_id&gt;6b67772393effe10e502fbf08bba1017&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;update_set_exporter.target&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_6b67772393effe10e502fbf08bba1017&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 07:46:56&lt;/sys_updated_on&gt;&lt;type&gt;string&lt;/type&gt;&lt;value&gt;github&lt;/value&gt;&lt;write_roles/&gt;&lt;/sys_properties&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=6b67772393effe10e502fbf08bba1017&quot;/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1907110790</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>eecfc8c593777a50e502fbf08bba10b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cfac31a920000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table></table>
+<target_name>update_set_exporter.target</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>5bd8fb63e0effe10af63d631b0112404</update_guid>
+<update_guid_history>5bd8fb63e0effe10af63d631b0112404:1907110790,55b73f23dbeffe10d45f76911102b9c5:-1165148568</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="CMDB Workspace">c8ab76825371201032b7ddeeff7b1280</application>
+<category>customer</category>
+<comments></comments>
+<name>sn_cmdb_ws_ms_class_metadata_ce9f62555bd50110693e7da52d81c7bd</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update sys_domain=&quot;global&quot; table=&quot;sn_cmdb_ws_ms_class_metadata&quot;&gt;&lt;sn_cmdb_ws_ms_class_metadata action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;ci_count_percent&gt;100&lt;/ci_count_percent&gt;&lt;sys_class_name&gt;sn_cmdb_ws_ms_class_metadata&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-01-26 09:01:20&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;ce9f62555bd50110693e7da52d81c7bd&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value=&quot;CMDB Workspace&quot; source=&quot;sn_cmdb_ws&quot;&gt;c8ab76825371201032b7ddeeff7b1280&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;CMDB Workspace&quot;&gt;c8ab76825371201032b7ddeeff7b1280&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_cmdb_ws_ms_class_metadata_ce9f62555bd50110693e7da52d81c7bd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-21 06:30:00&lt;/sys_updated_on&gt;&lt;table&gt;cmdb_ci_hardware&lt;/table&gt;&lt;/sn_cmdb_ws_ms_class_metadata&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1966656346</payload_hash>
+<remote_update_set display_value="Update set with git">aacfcc4d93737a50e502fbf08bba100f</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 06:39:30</sys_created_on>
+<sys_id>eecfcc4d93737a50e502fbf08bba100f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d0f161b8a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 06:39:30</sys_updated_on>
+<table>cmdb_ci_hardware</table>
+<target_name></target_name>
+<type>CMDB Workspace Multisource Class Metadat</type>
+<update_domain>global</update_domain>
+<update_guid>179dc4c1a5777a50910ad4d34dcd6978</update_guid>
+<update_guid_history>179dc4c1a5777a50910ad4d34dcd6978:-1966656346,5b9dc4c1e4777a503612fc79c989d929:-2121401785,2104c3e03effb650faa6cb518d5b59a4:-1966656346,2104c3e06effb6502e04f9edda368ba0:-2121401785,bf6a3dd0527b3650238ed87518601c39:-1966656346,376a3dd0097b3650e20a8087dbd1ab1c:-2121401785,c6d0304445f3b250662a9bc0739ac183:-1966656346,cad0304415f3b25088a7cadd65bf824d:-2121401785,d447e7efad2ffe10c23653f84ffc22e0:-1966656346,d847e7ef012ffe109aaab89fcc609daa:-2121401785,faadd25f1ea77e10705f0cb70a5207d1:-1966656346,2eadd25f44a77e106e097dea4cad2d8e:-2121401785,c514dd0f9123fa101c526a09523a326e:-1966656346,c514dd0f2f23fa1075187ea4eee9106a:-2121401785,937ac07e3eab3a10c6b2dc01c08d09a5:-1966656346,937ac07e70ab3a107e6818e3672c20a1:-2121401785,11e0875e3827b610470c3441f11d001b:-1966656346,11e0875ea527b6108adc1adbf206b817:-2121401785,6747f94eb7aff210d51de3cd9e4384b0:-1966656346,2b47f94ed9aff2104ebce6b3f646b1ab:-2121401785,bdbde879bf2b72101859d52b19d45f2c:-1966656346,b1bde879c02b72105b99ef62f971fc29:-2121401785,bdbda8792d2b721001289e81863c77f3:-1966656346</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+</unload>
