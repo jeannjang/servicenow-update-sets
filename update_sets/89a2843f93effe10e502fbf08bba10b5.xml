@@ -1,47 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2026-03-20 21:04:07">
-  <sys_remote_update_set action="INSERT_OR_UPDATE">
-    <parent></parent>
-    <remote_base_update_set></remote_base_update_set>
-    <description>Add Business rule </description>
-    <sys_updated_on>2026-03-21 04:04:07</sys_updated_on>
-    <update_source></update_source>
-    <update_set></update_set>
-    <sys_class_name>sys_remote_update_set</sys_class_name>
-    <application_name>Global</application_name>
-    <inserted></inserted>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_created_on>2026-03-21 04:04:07</sys_created_on>
-    <state>loaded</state>
-    <sys_created_by>admin</sys_created_by>
-    <application_version></application_version>
-    <commit_date></commit_date>
-    <summary></summary>
-    <origin_sys_id></origin_sys_id>
-    <collisions></collisions>
-    <sys_mod_count>0</sys_mod_count>
-    <remote_sys_id>89a2843f93effe10e502fbf08bba10b5</remote_sys_id>
-    <remote_parent_id></remote_parent_id>
-    <deleted></deleted>
-    <application>global</application>
-    <release_date></release_date>
-    <name>Push on complete state</name>
-    <application_scope>global</application_scope>
-    <updated></updated>
-  </sys_remote_update_set>
-  <sys_update_xml action="INSERT_OR_UPDATE">
-    <target_name>Export Update Set to GitHub</target_name>
-    <sys_updated_on>2026-03-21 04:04:07</sys_updated_on>
-    <type>Business Rule</type>
-    <update_set></update_set>
-    <view></view>
-    <update_guid_history>f4f4cc7b90233250609c92ce5a239c85:-2006008305</update_guid_history>
-    <sys_updated_by>admin</sys_updated_by>
-    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script"><sys_script action="INSERT_OR_UPDATE"><abort_action>false</abort_action><access>package_private</access><action_delete>false</action_delete><action_insert>false</action_insert><action_query>false</action_query><action_update>true</action_update><active>true</active><add_message>false</add_message><advanced>true</advanced><change_fields>false</change_fields><client_callable>false</client_callable><collection>sys_update_set</collection><condition/><description/><execute_function>false</execute_function><filter_condition table="sys_update_set">state=complete^EQ<item display_value="Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="complete"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter_condition><is_rest>false</is_rest><message/><name>Export Update Set to GitHub</name><order>100</order><priority>100</priority><rest_method/><rest_method_text/><rest_service/><rest_service_text/><rest_variables/><role_conditions/><script><![CDATA[(function executeRule(current, previous) {
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-03-20 21:15:21">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version></application_version>
+<collisions></collisions>
+<commit_date></commit_date>
+<deleted></deleted>
+<description>Add Business rule </description>
+<inserted></inserted>
+<name>Push on complete state</name>
+<origin_sys_id></origin_sys_id>
+<parent display_value=""></parent>
+<release_date></release_date>
+<remote_base_update_set display_value=""></remote_base_update_set>
+<remote_parent_id></remote_parent_id>
+<remote_sys_id>89a2843f93effe10e502fbf08bba10b5</remote_sys_id>
+<state>loaded</state>
+<summary></summary>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 04:15:21</sys_created_on>
+<sys_id>bace67b893737a50e502fbf08bba1034</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 04:15:21</sys_updated_on>
+<update_set display_value=""></update_set>
+<update_source display_value=""></update_source>
+<updated></updated>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_script_c0f2c0b793233250e502fbf08bba1043</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update sys_domain=&quot;global&quot; table=&quot;sys_script&quot;&gt;&lt;sys_script action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;sys_update_set&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table=&quot;sys_update_set&quot;&gt;state=complete^EQ&lt;item display_value=&quot;Complete&quot; endquery=&quot;false&quot; field=&quot;state&quot; goto=&quot;false&quot; newquery=&quot;false&quot; operator=&quot;=&quot; or=&quot;false&quot; value=&quot;complete&quot;/&gt;&lt;item endquery=&quot;true&quot; field=&quot;&quot; goto=&quot;false&quot; newquery=&quot;false&quot; operator=&quot;=&quot; or=&quot;false&quot; value=&quot;&quot;/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Export Update Set to GitHub&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous) {
 
-    if (current.state == 'complete' && previous.state != 'complete') {
+    if (current.state == &apos;complete&apos; &amp;&amp; previous.state != &apos;complete&apos;) {
         
-        gs.log('Business Rule triggered: ' + current.name, 'GitExporter');
+        gs.log(&apos;Business Rule triggered: &apos; + current.name, &apos;GitExporter&apos;);
         
         var exporter = new UpdateSetGitExporter();
         exporter.exportToGit(
@@ -50,21 +48,24 @@
         );
     }
 
-})(current, previous);]]]]><![CDATA[></script><sys_class_name>sys_script</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-17 08:39:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c0f2c0b793233250e502fbf08bba1043</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Export Update Set to GitHub</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_script_c0f2c0b793233250e502fbf08bba1043</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-17 08:39:44</sys_updated_on><template/><when>after</when></sys_script><sys_translated_text action="delete_multiple" query="documentkey=c0f2c0b793233250e502fbf08bba1043"/><sys_es_latest_script action="INSERT_OR_UPDATE"><id>c0f2c0b793233250e502fbf08bba1043</id><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-17 08:39:44</sys_created_on><sys_id>a8f484b793233250e502fbf08bba10fb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-17 08:39:44</sys_updated_on><table>sys_script</table><use_es_latest>true</use_es_latest></sys_es_latest_script></record_update>]]></payload>
-    <sys_created_on>2026-03-21 04:04:07</sys_created_on>
-    <action>INSERT_OR_UPDATE</action>
-    <table>sys_update_set</table>
-    <sys_created_by>admin</sys_created_by>
-    <comments></comments>
-    <sys_mod_count>0</sys_mod_count>
-    <replace_on_upgrade>0</replace_on_upgrade>
-    <sys_recorded_at>19cfaf373750000001</sys_recorded_at>
-    <update_guid>f4f4cc7b90233250609c92ce5a239c85</update_guid>
-    <application>global</application>
-    <name>sys_script_c0f2c0b793233250e502fbf08bba1043</name>
-    <remote_update_set>aa3ca33c93337a50e502fbf08bba10a1</remote_update_set>
-    <update_domain>global</update_domain>
-    <payload_hash>-2006008305</payload_hash>
-    <category>customer</category>
-  </sys_update_xml>
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 08:39:44&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c0f2c0b793233250e502fbf08bba1043&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Export Update Set to GitHub&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_c0f2c0b793233250e502fbf08bba1043&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 08:39:44&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=c0f2c0b793233250e502fbf08bba1043&quot;/&gt;&lt;sys_es_latest_script action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;id&gt;c0f2c0b793233250e502fbf08bba1043&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 08:39:44&lt;/sys_created_on&gt;&lt;sys_id&gt;a8f484b793233250e502fbf08bba10fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 08:39:44&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2006008305</payload_hash>
+<remote_update_set display_value="Push on complete state">bace67b893737a50e502fbf08bba1034</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-21 04:15:21</sys_created_on>
+<sys_id>f2ce67b893737a50e502fbf08bba1035</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19cfaf373750000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-21 04:15:21</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Export Update Set to GitHub</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>f4f4cc7b90233250609c92ce5a239c85</update_guid>
+<update_guid_history>f4f4cc7b90233250609c92ce5a239c85:-2006008305</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
 </unload>
