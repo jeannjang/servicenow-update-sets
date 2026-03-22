@@ -5,8 +5,8 @@ Automated pipeline to export Update Sets from a ServiceNow DEV PDI to GitHub, an
 ```
 DEV PDI (dev296169)
     │
-    │  Business Rule (on Complete)
-    │  Scripted REST API (manual trigger)
+    │  Business Rule (Main: on Complete)
+    │  Scripted REST API (Optional: manual trigger)
     ▼
 GitHub Repository
     └── update_sets/*.xml
