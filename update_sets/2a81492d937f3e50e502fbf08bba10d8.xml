@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-03-22 16:56:53">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version></application_version>
+<collisions></collisions>
+<commit_date></commit_date>
+<deleted></deleted>
+<description>Test</description>
+<inserted></inserted>
+<name>Test </name>
+<origin_sys_id></origin_sys_id>
+<parent display_value=""></parent>
+<release_date></release_date>
+<remote_base_update_set display_value=""></remote_base_update_set>
+<remote_parent_id></remote_parent_id>
+<remote_sys_id>2a81492d937f3e50e502fbf08bba10d8</remote_sys_id>
+<state>loaded</state>
+<summary></summary>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-22 23:56:53</sys_created_on>
+<sys_id>58d6816d93b77e50e502fbf08bba10e3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-22 23:56:53</sys_updated_on>
+<update_set display_value=""></update_set>
+<update_source display_value=""></update_source>
+<updated></updated>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sc_cat_item_b47c184193f77a50e502fbf08bba10ad</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update table=&quot;sc_cat_item&quot;&gt;&lt;sc_cat_item action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;access_type&gt;restricted&lt;/access_type&gt;&lt;active&gt;true&lt;/active&gt;&lt;availability&gt;on_desktop&lt;/availability&gt;&lt;billable&gt;false&lt;/billable&gt;&lt;category/&gt;&lt;checked_out/&gt;&lt;cost&gt;0&lt;/cost&gt;&lt;custom_cart/&gt;&lt;delivery_plan display_value=&quot;DEFAULT&quot;&gt;523da512c611228900811a37c97c2014&lt;/delivery_plan&gt;&lt;delivery_plan_script/&gt;&lt;delivery_time&gt;1970-01-03 00:00:00&lt;/delivery_time&gt;&lt;description/&gt;&lt;display_price_property&gt;non_zero&lt;/display_price_property&gt;&lt;entitlement_script/&gt;&lt;flow_designer_flow/&gt;&lt;fulfillment_automation_level&gt;unspecified&lt;/fulfillment_automation_level&gt;&lt;group/&gt;&lt;hide_sp&gt;false&lt;/hide_sp&gt;&lt;icon/&gt;&lt;ignore_price&gt;true&lt;/ignore_price&gt;&lt;image/&gt;&lt;location/&gt;&lt;make_item_non_conversational&gt;false&lt;/make_item_non_conversational&gt;&lt;mandatory_attachment&gt;false&lt;/mandatory_attachment&gt;&lt;meta/&gt;&lt;mobile_hide_price&gt;false&lt;/mobile_hide_price&gt;&lt;mobile_picture/&gt;&lt;mobile_picture_type&gt;use_desktop_picture&lt;/mobile_picture_type&gt;&lt;model/&gt;&lt;name&gt;New Test item&lt;/name&gt;&lt;no_attachment_v2&gt;false&lt;/no_attachment_v2&gt;&lt;no_cart&gt;false&lt;/no_cart&gt;&lt;no_cart_v2&gt;false&lt;/no_cart_v2&gt;&lt;no_delivery_time_v2&gt;false&lt;/no_delivery_time_v2&gt;&lt;no_order&gt;false&lt;/no_order&gt;&lt;no_order_now&gt;false&lt;/no_order_now&gt;&lt;no_proceed_checkout&gt;false&lt;/no_proceed_checkout&gt;&lt;no_quantity&gt;false&lt;/no_quantity&gt;&lt;no_quantity_v2&gt;false&lt;/no_quantity_v2&gt;&lt;no_save_as_draft&gt;false&lt;/no_save_as_draft&gt;&lt;no_search&gt;false&lt;/no_search&gt;&lt;no_wishlist_v2&gt;false&lt;/no_wishlist_v2&gt;&lt;omit_price&gt;false&lt;/omit_price&gt;&lt;order&gt;0&lt;/order&gt;&lt;ordered_item_link/&gt;&lt;owner display_value=&quot;System Administrator&quot;&gt;6816f79cc0a8016401c5a33be04be441&lt;/owner&gt;&lt;picture/&gt;&lt;preview&gt;JavaScript: popupOpenStandard(&quot;com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;amp;sysparm_id=b47c184193f77a50e502fbf08bba10ad&amp;amp;sysparm_preview=true&quot;, &quot;summary&quot;);&lt;/preview&gt;&lt;price&gt;0&lt;/price&gt;&lt;published_ref/&gt;&lt;recurring_frequency/&gt;&lt;recurring_price&gt;0&lt;/recurring_price&gt;&lt;request_method/&gt;&lt;roles/&gt;&lt;sc_catalogs/&gt;&lt;sc_ic_item_staging/&gt;&lt;sc_ic_version/&gt;&lt;sc_template/&gt;&lt;short_description/&gt;&lt;show_variable_help_on_load&gt;false&lt;/show_variable_help_on_load&gt;&lt;start_closed&gt;false&lt;/start_closed&gt;&lt;state/&gt;&lt;sys_class_name&gt;sc_cat_item&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-21 07:35:01&lt;/sys_created_on&gt;&lt;sys_id&gt;b47c184193f77a50e502fbf08bba10ad&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;New Test item&lt;/sys_name&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sc_cat_item_b47c184193f77a50e502fbf08bba10ad&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-22 23:47:42&lt;/sys_updated_on&gt;&lt;taxonomy_topic/&gt;&lt;template/&gt;&lt;template_manager_roles/&gt;&lt;type&gt;item&lt;/type&gt;&lt;use_sc_layout&gt;true&lt;/use_sc_layout&gt;&lt;vendor/&gt;&lt;version&gt;2&lt;/version&gt;&lt;visible_bundle&gt;true&lt;/visible_bundle&gt;&lt;visible_guide&gt;true&lt;/visible_guide&gt;&lt;visible_standalone&gt;true&lt;/visible_standalone&gt;&lt;workflow/&gt;&lt;/sc_cat_item&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=b47c184193f77a50e502fbf08bba10ad&quot;/&gt;&lt;fx_price action=&quot;delete_multiple&quot; query=&quot;id=b47c184193f77a50e502fbf08bba10ad&quot;/&gt;&lt;fx_price action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;amount&gt;0&lt;/amount&gt;&lt;currency display_value=&quot;KRW&quot;&gt;KRW&lt;/currency&gt;&lt;field&gt;price&lt;/field&gt;&lt;id&gt;b47c184193f77a50e502fbf08bba10ad&lt;/id&gt;&lt;parent/&gt;&lt;reference_amount&gt;0&lt;/reference_amount&gt;&lt;reference_currency display_value=&quot;USD&quot;&gt;USD&lt;/reference_currency&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-21 07:35:01&lt;/sys_created_on&gt;&lt;sys_id&gt;7f7cd84193f77a50e502fbf08bba1003&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-21 07:35:01&lt;/sys_updated_on&gt;&lt;table&gt;sc_cat_item&lt;/table&gt;&lt;type&gt;calculated&lt;/type&gt;&lt;/fx_price&gt;&lt;fx_price action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;amount&gt;0&lt;/amount&gt;&lt;currency display_value=&quot;USD&quot;&gt;USD&lt;/currency&gt;&lt;field&gt;recurring_price&lt;/field&gt;&lt;id&gt;b47c184193f77a50e502fbf08bba10ad&lt;/id&gt;&lt;parent/&gt;&lt;reference_amount&gt;0&lt;/reference_amount&gt;&lt;reference_currency display_value=&quot;USD&quot;&gt;USD&lt;/reference_currency&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-21 07:35:01&lt;/sys_created_on&gt;&lt;sys_id&gt;7b7cd84193f77a50e502fbf08bba1006&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-21 07:35:01&lt;/sys_updated_on&gt;&lt;table&gt;sc_cat_item&lt;/table&gt;&lt;type&gt;calculated&lt;/type&gt;&lt;/fx_price&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-910828737</payload_hash>
+<remote_update_set display_value="Test ">58d6816d93b77e50e502fbf08bba10e3</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-22 23:56:53</sys_created_on>
+<sys_id>54d6c96193f77e50e502fbf08bba103b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d17f2849e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-22 23:56:53</sys_updated_on>
+<table></table>
+<target_name>New Test item</target_name>
+<type>Catalog Item</type>
+<update_domain>global</update_domain>
+<update_guid>31b4896d2bb77e50aa153a48a3e2fbfa</update_guid>
+<update_guid_history>31b4896d2bb77e50aa153a48a3e2fbfa:-910828737,bf7cd841aef77a50248f5e4ef27cca11:648534010,bf7cd8412cf77a507124942a070b5d1c:1013367394</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments></comments>
+<name>sys_script_c0f2c0b793233250e502fbf08bba1043</name>
+<payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;record_update sys_domain=&quot;global&quot; table=&quot;sys_script&quot;&gt;&lt;sys_script action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;sys_update_set&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table=&quot;sys_update_set&quot;&gt;state=complete^EQ&lt;item display_value=&quot;Complete&quot; endquery=&quot;false&quot; field=&quot;state&quot; goto=&quot;false&quot; newquery=&quot;false&quot; operator=&quot;=&quot; or=&quot;false&quot; value=&quot;complete&quot;/&gt;&lt;item endquery=&quot;true&quot; field=&quot;&quot; goto=&quot;false&quot; newquery=&quot;false&quot; operator=&quot;=&quot; or=&quot;false&quot; value=&quot;&quot;/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Export Update Set to GitHub&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous) {
+
+    if (current.state == &apos;complete&apos; &amp;&amp; previous.state != &apos;complete&apos;) {
+        
+        gs.log(&apos;Business Rule triggered: &apos; + current.name, &apos;GitExporter&apos;);
+        
+        var exporter = new UpdateSetGitExporter();
+        exporter.exportToGit(
+            current.sys_id.toString(),
+            current.name.toString()
+        );
+    }
+
+	// Testing for github action
+	// Testing for github action 2
+	// Testing for github action 3
+	// Testing for github action 4
+	// Testing for github action 5
+	// Testing for github action 6
+	// Testing for github action 7
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 08:39:44&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c0f2c0b793233250e502fbf08bba1043&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;Export Update Set to GitHub&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value=&quot;Global&quot; source=&quot;global&quot;&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=&quot;Global&quot;&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_c0f2c0b793233250e502fbf08bba1043&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-22 23:49:59&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action=&quot;delete_multiple&quot; query=&quot;documentkey=c0f2c0b793233250e502fbf08bba1043&quot;/&gt;&lt;sys_es_latest_script action=&quot;INSERT_OR_UPDATE&quot;&gt;&lt;id&gt;c0f2c0b793233250e502fbf08bba1043&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-17 08:39:44&lt;/sys_created_on&gt;&lt;sys_id&gt;a8f484b793233250e502fbf08bba10fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-17 08:39:44&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1347917595</payload_hash>
+<remote_update_set display_value="Test ">58d6816d93b77e50e502fbf08bba10e3</remote_update_set>
+<replace_on_upgrade>0</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-22 23:56:53</sys_created_on>
+<sys_id>d0d6c96193f77e50e502fbf08bba103c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d17f49bd60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-22 23:56:53</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Export Update Set to GitHub</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>9735c56d82b77e502c2765e2bca17898</update_guid>
+<update_guid_history>9735c56d82b77e502c2765e2bca17898:-1347917595,8e7d18c1e6f77a50e02cd1bd68ed5497:-1410535394,4059c6f7ceef3250906f77d01cd986fb:-1347917595,633802fff9ef3250106ceba3444a6a0d:-772143545,1d63e43b5fe33250b654fd2262f509e8:-1362643256,5992a4b3fb273250e8238efb518adabf:-705841560,b271a83b57e3325067b3b8d1bd524146:2000175399,8dce903b24e332503c5ea730438d6ee7:576951045,fc2dd47319e33250489476538008a9b7:-2028214270,1c1ad07f18633250afa2b881bbf52e9f:-2006008305,082b4837466332502be81fd5f37d22c6:-1175150090,f4f4cc7b90233250609c92ce5a239c85:-2006008305</update_guid_history>
+<update_set display_value=""></update_set>
+<view></view>
+</sys_update_xml>
+</unload>
